@@ -11,24 +11,23 @@ This project implements Conway's Game of Life using multithreading with POSIX th
 - **Predefined Patterns:** Initializes the grid with Still Life, Oscillator, and Spaceship patterns.
 - **Console Visualization:** Prints the grid in the terminal, refreshing every generation.
 
-## Dependencies
+## Requirments
 
 - POSIX-compliant system (Linux/macOS)
 - GCC compiler
 - `pthread` library
+- Make (optional)
 
-## Compilation & Execution
-
-### Compile the Program:
-
-```sh
-gcc -o game_of_life game_of_life.c -lpthread
-```
-
-### Run the Program:
+## Installation & Compilation
 
 ```sh
-./game_of_life
+# Compile the shell
+make   # If a Makefile is available
+# Or use command
+gcc -pthread -o game game.c
+
+# Then run the shell
+./shell
 ```
 
 ## Implementation Details
@@ -82,14 +81,6 @@ Current Generation Number: 1
 
 (Updates every 0.5 seconds)
 
-## Future Enhancements
-
-- Support for custom grid sizes and dynamic thread allocation.
-- Interactive user input for pattern initialization.
-- Optimization for larger grids using OpenMP.
-
 ## Author
 
-[Your Name]  
-**License:** MIT  
-Feel free to modify and enhance this implementation!
+Developed by Ahmed Ibrahim. Contributions and feedback are welcome!
